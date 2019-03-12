@@ -11,13 +11,15 @@ def squareCheck(x1,y1,x2,y2):
 def bishCheck(x1,y1,x2,y2):
     if (squareCheck(x1,y1,x2,y2)==0):
         print("Unreachable");
+    elif(abs(y2-y1)==abs(x2-x1)==0):
+         print("0 moves");
     elif(abs(y2-y1)==abs(x2-x1)):
         print("1 move");
     else:
-        print("2 move");
+        print("2 moves");
         
 
-bishCheck(5,7,1,3);
+bishCheck(2,2,3,3);
 
             
     
